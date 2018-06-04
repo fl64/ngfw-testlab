@@ -1,0 +1,2 @@
+user@example.com|{SHA512-CRYPT}$6$e6hQWGbMtAbccnZg$O4dtI4un3b76eHEuKbnLiCR/qG5M7LZhvFWX2aCWGeLRD5Ow/9f/UrfgsKxXBBnVo18zSREZl1N/yk/wIVpYe/
+admin@example.com|{SHA512-CRYPT}$6$stdTuNJpsBFZ1SH4$zptTG30qQT4ke5lganyZBx9y7HWn8oGrgoiKETvimsD2G2gKD6v2dVl6gzsF4nnQIzoldvvL4CLxPCdZEHsHA0
