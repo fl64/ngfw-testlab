@@ -1,6 +1,6 @@
 ### CentOS 7.4
 
-#### Set dynamic IP
+#### Set static IP
 ```shell
 nmcli con mod ens192 connection.autoconnect true ipv4.method manual ipv4.addresses 192.168.127.199/22 ipv4.gateway 192.168.124.4 ipv4.dns 8.8.8.8
 systemctl restart network
