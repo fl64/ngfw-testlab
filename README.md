@@ -18,7 +18,18 @@ nmcli con up ens192
 nmcli con down ens192
 ```
 
-### How to install and run
+### How to run
+#### Run
+```shell
+cd ngfw-testlab
+docker-compose up -d
+```
+#### Stop
+```shell
+docker-compose down
+```
+
+### How to install
 
 #### Install
 ```shell
@@ -36,15 +47,12 @@ exit
 git clone https://github.com/fl64/ngfw-testlab
 sudo usermod -aG docker $(whoami) && newgrp docker # Добавить текущего пользователя в группу docker для выполнения команд по управлению контейнерами без sudo
 ```
-#### Run
-```shell
-cd ngfw-testlab
-docker-compose up -d
-```
-#### Stop
-```shell
-docker-compose down
-```
+
+### Info
+mail accounts:
+- user@example.com\P@ssw0rd
+- admin@example.com\P@ssw0rd
+
 
 ### Source:
 - Mail server: https://github.com/tomav/docker-mailserver
