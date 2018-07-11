@@ -9,7 +9,8 @@ services:
     volumes:
     - ./http/index.html:/usr/share/nginx/html/index.html
     - ./http/site.conf:/etc/nginx/conf.d/default.conf
-
+    - ./http/nginx.crf:/etc/nginx/nginx.crt
+    - ./http/nginx.key:/etc/nginx/nginx.key
   mail:
     image: tvial/docker-mailserver:latest
     hostname: ${HOSTNAME}

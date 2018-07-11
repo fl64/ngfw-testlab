@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   config.vm.box_check_update = false
-  config.vm.box = "centos/7"
+  config.vm.box = "generic/centos7"
 
   config.vm.define "srv1" do |srv1|
     srv1.vm.hostname = 'srv1.example.com'
