@@ -34,12 +34,14 @@ docker-compose down
 #### Install
 ```shell
 sudo -i
-systemctl disable --now {firewalld,postfix}
-yum install wget epel-release git -y && yum install python-pip -y
-wget -qO- https://get.docker.com/ | sh
-systemctl enable --now docker
-yum upgrade python* -y
-pip install docker-compose
+
+systemctl disable --now {firewalld,postfix} \
+&& yum install wget epel-release git -y && yum install python-pip -y \
+&& wget -qO- https://get.docker.com/ | sh \
+&& systemctl enable --now docker \
+&& yum upgrade python* -y \
+&& pip install docker-compose
+
 exit
 ```
 
